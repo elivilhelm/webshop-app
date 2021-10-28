@@ -1,52 +1,42 @@
-import '../styles/globals.css'
-import {useEffect, useState} from "react";
-
+import "../styles/globals.css";
+import { useEffect, useState } from "react";
 
 function MyApp({ Component, pageProps }) {
+  const [deck, setDeck] = useState({});
+  const [cards, setCards] = useState({});
 
-const[deck,setDeck] = useState({});
-const[cards, setCards] = useState({});
+  useEffect(() => {
+    async function getData() {
+      const res = await fetch(
+        "https://digimoncard.io/api-public/search.php?type=digimon&sort=name&sortdirection=desc&series=Digimon Card Game"
+      );
+      //console.log(res);
+      const data = await res.json();
 
-useEffect(() =>{
-    async function getData(){
-        const res = await fetch('https://digimoncard.io/api-public/search.php?type=digimon&sort=name&sortdirection=desc&series=Digimon Card Game');
-        //console.log(res);
-        const data = await res.json();
-        
-        setDeck(data);     
-        
+      setDeck(data);
     }
 
     getData();
-    
-    
+  }, []);
 
-},[]);
+  
+  useEffect(() => {
+    async function setCardsArray() {
+      const cardsArray = [];
+      for (let i = 0; i < 200; i = i + 15) {
+        cardsArray.push(deck[i]);
+      }
 
-useEffect(()=>{
-
-  async function setCardsArray(){
-      const cardsArray = []
-      for(let i=0;i<200;i=i+15){
-      cardsArray.push(deck[i])
-      
-  }
-    
-    setCards(cardsArray);
-
-  }
+      setCards(cardsArray);
+    }
     setCardsArray();
-    
-    
-    
-},[deck]);
+  }, [deck]);
 
-console.log(deck);
-console.log(cards);
+  console.log(deck);
+  //console.log(cards);
+  
 
-
-
-  return <Component {...pageProps} />
+  return <Component {...pageProps} />;
 }
 
-export default MyApp
+export default MyApp;
