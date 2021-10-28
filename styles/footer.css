@@ -1,0 +1,31 @@
+
+
+.FooterContainer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  height: auto;
+}
+
+.footer-size{
+    font-size: small;
+}
+
+.footer-description{
+    text-align: center;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.alignCol{
+    text-align: center;
+}
+ .socials, .link-align{
+     margin-left: 4vw;
+ }
