@@ -1,21 +1,20 @@
 import React from "react";
-import styles from "../styles/Home.module.css";
 import DigimonImage from "./digimonImage";
 
-const productCard = (props) => (
-  <div className={styles.cardContainer}>
-    <section className={styles.cardMain}>
-      <a href="https://nextjs.org/docs" className={styles.cardType}>
+const ProductCard = (props) => (
+  <div className="cardContainer">
+    <section className="cardMain">
+      <a href="#" className="cardType">
         <p>
           <small>Digi-Egg</small>
         </p>
       </a>
       <DigimonImage/>
-      <a href="https://nextjs.org/docs" className={styles.cardName}>
-        <h1 className={styles.cardName}>Name</h1>
+      <a href="#" className="cardName">
+        <h1 className="cardName">Name</h1>
       </a>
-      <a href="https://nextjs.org/docs" className={styles.cardPrice}>
-        <h4 className={styles.cardName}>12.99$</h4>
+      <a href="#" className="cardPrice">
+        <h4 className="cardName">12.99$</h4>
       </a>
       <p>
         <small>
@@ -27,4 +26,4 @@ const productCard = (props) => (
     </section>
   </div>
 );
-export default productCard;
+export default ProductCard;

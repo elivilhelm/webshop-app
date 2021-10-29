@@ -1,6 +1,3 @@
-import '../styles/footer.css'
-import '../styles/globals.css'
-import '../styles/header.css'
 import { useEffect, useState } from "react";
 
 function MyApp({ Component, pageProps }) {

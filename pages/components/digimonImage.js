@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import styles from "../styles/Home.module.css";
 
 export class DigimonImage extends React.Component {
   constructor(props) {
@@ -11,12 +10,9 @@ export class DigimonImage extends React.Component {
   }
   render() {
     return (
-      <a href="https://nextjs.org/docs" className={styles.cardImage}>
-        <img
-          className={styles.digPic}
-          src={"./digimon.jpg"}
-          alt="Digimon"
-          style={{
+      <a href="#" className="cardImage">
+        <img className="digPic" src={"./digimon.jpg"}
+          alt="Digimon" style={{
             border: this.state.border,
           }}
         ></img>

@@ -2,7 +2,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import 'bootstrap/dist/css/bootstrap.min.css';
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-import SocialFollow from './SocialFollow';
+import SocialFollow from './fontAwesomeIcons/Youtube';
+import Youtube from './fontAwesomeIcons/Youtube';
+import Facebook from './fontAwesomeIcons/Facebook';
+import Instagram from './fontAwesomeIcons/Instagram';
 
 
 function Footer() {
@@ -18,8 +21,15 @@ function Footer() {
 
                     <div className="col-md-2 mt-md-0 col-sm-2 col-xs-2 socials ">
                         <h5 className="text-uppercase">Social Media</h5>
-                        <div className="social-icons">
-                            <SocialFollow />
+                        <div className="social-icons social-container">
+
+                            <div className="row">
+                                <div className="col-4"><Facebook /></div>
+                                <div className="col-4"><Youtube /></div>
+                                <div className="col-4"><Instagram /></div>
+
+                                
+                            </div>
                         </div>
                     </div>
 
