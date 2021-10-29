@@ -27,7 +27,6 @@ function Footer() {
                         <h5 className="text-uppercase">Links</h5>
                         <ul className="list-unstyled">
                             <li><a href="https://digimon.fandom.com/wiki/Digimon">Digimon Wiki</a></li>
-                            <li><a href="https://www.youtube.com/watch?v=0JeqwOpdtVc&list=PLf_P3rQN-8NhNlDJGfZkBGUReFkr5njOy&ab_channel=SvenskaEller">Digimon season 1</a></li>
                             <li><a href="https://www.youtube.com/watch?v=FUE_rsMvqYU&ab_channel=Crunchyroll">Digimon History</a></li>
                         </ul>
                     </div>

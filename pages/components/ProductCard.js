@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/Home.module.css";
-import DigimonImage from "./digimonImage";
+import DigimonImage from "../digimonImage";
 
 const productCard = (props) => (
   <div className={styles.cardContainer}>
@@ -20,7 +20,7 @@ const productCard = (props) => (
       <p>
         <small>
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          industry. Lorem Ipsum has been the internet standard dummy text ever
           since the 1500s.
         </small>
       </p>
