@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/Home.module.css";
-import DigimonImage from "../digimonImage";
+import DigimonImage from "./digimonImage";
 
 const productCard = (props) => (
   <div className={styles.cardContainer}>

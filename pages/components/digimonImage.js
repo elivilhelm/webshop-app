@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
-import { render } from "react-dom";
 import styles from "../styles/Home.module.css";
 
 export class DigimonImage extends React.Component {

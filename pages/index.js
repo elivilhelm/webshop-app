@@ -13,10 +13,8 @@ function MyApp({ Component, pageProps }) {
         "https://digimoncard.io/api-public/search.php?type=digimon&sort=name&sortdirection=desc&series=Digimon Card Game"
       );
       //console.log(res);
-
       const data = await res.json();
-      console.log(data);
-
+      //console.log(data);
 
       setDeck(data);
     }
