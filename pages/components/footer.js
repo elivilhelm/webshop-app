@@ -1,8 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
-import 'bootstrap/dist/css/bootstrap.min.css';
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-import SocialFollow from './fontAwesomeIcons/Youtube';
 import Youtube from './fontAwesomeIcons/Youtube';
 import Facebook from './fontAwesomeIcons/Facebook';
 import Instagram from './fontAwesomeIcons/Instagram';

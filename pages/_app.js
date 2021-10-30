@@ -5,6 +5,7 @@ import '../styles/style.css'
 import '../styles/footer.css';
 import '../styles/globals.css';
 import '../styles/header.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home(digimon) {
   return (
