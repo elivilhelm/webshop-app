@@ -39,6 +39,9 @@
   margin-top: 3rem;
 }
 
+.cardName{
+  font-size: larger;
+}
 
 .card {
   margin: 1rem;
@@ -64,7 +67,8 @@
 }
 
 .cardMain{
-  margin: 1rem;
+  margin-top: 4rem;
+  margin: 3rem;
   padding: 1.5rem;
   text-align: left;
   color: inherit;
@@ -72,7 +76,7 @@
   border: 1px solid #000000;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  width: 15%;
+  width: auto;
 }
 .cardMain:hover,
 .cardMain:focus,
@@ -129,9 +133,7 @@
 .digPic{
   border: 5px solid #d5e400;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
+  width: auto;
   height: 200px;
   object-fit: cover;
   

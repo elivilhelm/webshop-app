@@ -1,22 +1,42 @@
-import Header from './components/header'
-import Footer from './components/footer'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import ProductCard from "./productComponent"
-import MyApp from './_app'
+import { useEffect, useState } from "react";
 
-export default function Home() {
-  return (
-    <div>
-      <Header />
+function MyApp({ Component, pageProps }) {
+  const [deck, setDeck] = useState({});
+  const [cards, setCards] = useState({});
 
-      
-      <Footer />
-      <h1>Welcome to next</h1>
-      <ProductCard/>
-      <ProductCard/>
-      <ProductCard/>
-    </div>
-  )
+  useEffect(() => {
+    async function getData() {
+      const res = await fetch(
+        "https://digimoncard.io/api-public/search.php?type=digimon&sort=name&sortdirection=desc&series=Digimon Card Game"
+      );
+      //console.log(res);
+      const data = await res.json();
+      //console.log(data);
+
+      setDeck(data);
+    }
+
+    getData();
+  }, []);
+
+  
+  useEffect(() => {
+    async function setCardsArray() {
+      const cardsArray = [];
+      for (let i = 0; i < 200; i = i + 15) {
+        cardsArray.push(deck[i]);
+      }
+
+      setCards(cardsArray);
+    }
+    setCardsArray();
+  }, [deck]);
+
+  console.log(deck);
+  //console.log(cards);
+  
+
+  return <Component {...pageProps} />;
 }
+
+export default MyApp;
