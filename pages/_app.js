@@ -2,10 +2,13 @@ import '../styles/footer.css'
 import '../styles/globals.css'
 import '../styles/header.css'
 import { useEffect, useState } from "react";
+import {createContext} from "react";
 
 function MyApp({ Component, pageProps }) {
   const [deck, setDeck] = useState({});
   const [cards, setCards] = useState({});
+  const themeContext = createContext();
+  const [dark, setDark] = useState(false);
 
   useEffect(() => {
     async function getData() {
@@ -35,10 +38,17 @@ function MyApp({ Component, pageProps }) {
   }, [deck]);
 
   console.log(deck);
-  //console.log(cards);
+  console.log(cards);
   
 
-  return <Component {...pageProps} />;
+  return (
+      <themeContext.Provider value={dark, setDark}>
+
+        <Component {...pageProps}/>
+
+      </themeContext.Provider>
+
+  );
 }
 
 export default MyApp;
