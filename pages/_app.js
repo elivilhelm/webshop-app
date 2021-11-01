@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
 
 
-export default function Home( { Component, pageProps}) {
+export default function Home({ Component, pageProps }) {
   return (
     <div>
       <Head>
@@ -17,10 +17,7 @@ export default function Home( { Component, pageProps}) {
       </Head>
       <Header />
 
-
-      
-
-       <Component {...pageProps} />
+      <Component {...pageProps} />
 
       <Footer />
     </div>
