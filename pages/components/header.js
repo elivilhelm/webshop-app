@@ -15,9 +15,11 @@ function Header() {
                     <div >
                         <ul className="navbar-nav mb-2 mb-lg-0">
                             <li className="nav-item active">
+                                
                                 <Link href="/" passHref>
                                    <a> <GrayLink>Home</GrayLink> </a>
                                 </Link>
+                                
                             </li>
                             <li className="nav-item">
                                 <Link href="/features">

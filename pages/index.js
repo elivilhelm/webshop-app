@@ -1,41 +1,22 @@
-import { useEffect, useState } from "react";
-import ProductCard from './components/ProductCard';
+import ProductCard from "./components/ProductCard";
 
+export const getStaticProps = async() =>{ //this function runs at buildtime as our app is built and our components rendered
+  
+  const res = await fetch(
+    "https://digimoncard.io/api-public/search.php?type=digimon&sort=name&sortdirection=desc&series=Digimon Card Game"
+  );
 
-function MyApp({ Component, pageProps }) {
-  const [deck, setDeck] = useState({});
-  const [cards, setCards] = useState({});
+  const data = await res.json();
+    
+  return{
+    props:{digimonCards: data} //Kommer att skickas till pagecomponent i form av props
 
-  useEffect(() => {
-    async function getData() {
-      const res = await fetch(
-        "https://digimoncard.io/api-public/search.php?type=digimon&sort=name&sortdirection=desc&series=Digimon Card Game"
-      );
-      //console.log(res);
-      const data = await res.json();
-      //console.log(data);
+  }
+}
 
-      setDeck(data);
-    }
-
-    getData();
-  }, []);
-
-
-  useEffect(() => {
-    async function setCardsArray() {
-      const cardsArray = [];
-      for (let i = 0; i < 200; i = i + 15) {
-        cardsArray.push(deck[i]);
-      }
-
-      setCards(cardsArray);
-    }
-    setCardsArray();
-  }, [deck]);
-
-
+export default function Home(){
   return (
+
     <div className="fluid-container w-100">
       <div className="row">
         <div className="col-4"><ProductCard /></div>
@@ -45,5 +26,3 @@ function MyApp({ Component, pageProps }) {
     </div>
   )
 }
-
-export default MyApp;
