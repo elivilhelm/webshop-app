@@ -9,15 +9,15 @@ const ProductCard = (props) => (
           <small>{props.type}</small>
         </p>
       </a>
-      <DigimonImage/>
+      <img src={props.image} className="digPic" />
       <a href="#" className="cardName">
         <h1 className="cardName">{props.name}</h1>
       </a>
       <a href="#" className="cardPrice">
         <h4 className="cardName">{props.price}$</h4>
       </a>
-      <p>
-        <small>
+      <p >
+        <small className="description-text">
           {props.description}
         </small>
       </p>
