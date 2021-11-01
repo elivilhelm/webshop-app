@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
 import Youtube from './fontAwesomeIcons/Youtube';
 import Facebook from './fontAwesomeIcons/Facebook';
 import Instagram from './fontAwesomeIcons/Instagram';

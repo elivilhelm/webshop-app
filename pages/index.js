@@ -1,4 +1,8 @@
 import { useEffect, useState } from "react";
+import head from 'next/head'
+import Image from 'next/image'
+import ProductCard from './components/ProductCard';
+
 
 function MyApp({ Component, pageProps }) {
   const [deck, setDeck] = useState({});
@@ -19,7 +23,7 @@ function MyApp({ Component, pageProps }) {
     getData();
   }, []);
 
-  
+
   useEffect(() => {
     async function setCardsArray() {
       const cardsArray = [];
@@ -34,9 +38,18 @@ function MyApp({ Component, pageProps }) {
 
   console.log(deck);
   //console.log(cards);
-  
 
-  return <Component {...pageProps} />;
+
+  return (
+
+    <div className="fluid-container w-100">
+      <div className="row">
+        <div className="col-4"><ProductCard /></div>
+        <div className="col-4"><ProductCard /></div>
+        <div className="col-4"><ProductCard /></div>
+      </div>
+    </div>
+  )
 }
 
 export default MyApp;
