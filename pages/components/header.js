@@ -10,7 +10,7 @@ function Header() {
                     <div >
                         <ul className="navbar-nav mb-2 mb-lg-0">
                             <li className="nav-item active">
-                                <a className="nav-link" aria-current="page" href="#">Home</a>
+                                <a className="nav-link" aria-current="page" href="#">home</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Features</a>

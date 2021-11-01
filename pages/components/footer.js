@@ -14,7 +14,7 @@ function Footer() {
 
                     <div className="col-md-7 mt-md-0  col-sm-12 col-xs-2">
                         <h5 className="text-uppercase">Digimon Card</h5>
-                        <p className="footer-description">Digimon  is a popular Japanese series of media and merchandise created by Akiyoshi Hongo, which is comprised of anime, manga, toys, video games, trading card games and other media.</p>
+                        <p className="footer-description">Digimon is a popular Japanese series of media and merchandise created by Akiyoshi Hongo, which is comprised of anime, manga, toys, video games, trading card games and other media.</p>
                     </div>
 
                     <div className="col-md-2 mt-md-0 col-sm-2 col-xs-2 socials ">

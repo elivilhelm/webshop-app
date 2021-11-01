@@ -1,7 +1,51 @@
-import { useEffect, useState } from "react";
+//import { useEffect, useState } from "react";
 
-function MyApp({ Component, pageProps }) {
-  const [deck, setDeck] = useState({});
+export const getStaticProps = async() =>{ //this function runs at buildtime as our app is built and our components rendered
+  
+  const res = await fetch(
+    "https://digimoncard.io/api-public/search.php?type=digimon&sort=name&sortdirection=desc&series=Digimon Card Game"
+  );
+
+  const data = await res.json();
+    
+
+  return{
+    props:{digimonCards: data} //Kommer att skickas till pagecomponent i form av props
+
+  }
+  
+}
+
+function cardsData  ({digimonCards}){
+
+return(
+  
+  <div></div>
+
+)
+
+}
+
+
+function MyApp({ Component, pageProps}) {
+  
+  return <Component {...pageProps} />;
+  
+  
+
+  
+
+  
+  
+  
+
+}
+
+
+export default cardsData;
+
+
+/*const [deck, setDeck] = useState({});
   const [cards, setCards] = useState({});
 
   useEffect(() => {
@@ -9,9 +53,9 @@ function MyApp({ Component, pageProps }) {
       const res = await fetch(
         "https://digimoncard.io/api-public/search.php?type=digimon&sort=name&sortdirection=desc&series=Digimon Card Game"
       );
-      //console.log(res);
+      
       const data = await res.json();
-      //console.log(data);
+      console.log(data);
 
       setDeck(data);
     }
@@ -30,13 +74,4 @@ function MyApp({ Component, pageProps }) {
       setCards(cardsArray);
     }
     setCardsArray();
-  }, [deck]);
-
-  console.log(deck);
-  //console.log(cards);
-  
-
-  return <Component {...pageProps} />;
-}
-
-export default MyApp;
+  }, [deck]);*/
