@@ -6,21 +6,19 @@ const ProductCard = (props) => (
     <section className="cardMain">
       <a href="#" className="cardType">
         <p>
-          <small>Digi-Egg</small>
+          <small>{props.type}</small>
         </p>
       </a>
       <DigimonImage/>
       <a href="#" className="cardName">
-        <h1 className="cardName">Name</h1>
+        <h1 className="cardName">{props.name}</h1>
       </a>
       <a href="#" className="cardPrice">
-        <h4 className="cardName">12.99$</h4>
+        <h4 className="cardName">{props.price}$</h4>
       </a>
       <p>
         <small>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the internet standard dummy text ever
-          since the 1500s.
+          {props.description}
         </small>
       </p>
     </section>
