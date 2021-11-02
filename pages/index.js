@@ -9,9 +9,6 @@ import React, { useState } from "react";
 export const getStaticProps = async () => {
   //this function runs at buildtime as our app is built and our components rendered
 
-
-export const getStaticProps = async() =>{ //this function runs at buildtime as our app is built and our components rendered
-  
   const res = await fetch(
     "https://digimoncard.io/api-public/search.php?type=digimon&sort=name&sortdirection=desc&series=Digimon Card Game"
   );
@@ -50,6 +47,7 @@ function ReturnAPIdata({ digimonCards }) {
       >
         show more
       </button>
+
     </div>
   );
 }
@@ -61,5 +59,5 @@ export default function Home({ digimonCards }) {
       <ReturnAPIdata digimonCards={digimonCards} />
     </div>
   );
-  }
+
 }
