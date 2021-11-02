@@ -1,10 +1,14 @@
 const dark = {
-    color: "#000",
-    backgroundColor: "#505083"
+    
+    color: "#FFF",
+    backgroundColor: "#000000"
 
 
+    }
 
-}
+    
+
+
 
 
 export default dark;

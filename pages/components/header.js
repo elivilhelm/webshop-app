@@ -2,13 +2,17 @@ import Link from 'next/Link';
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
 
+
+
 const GrayLink = styled.a`
   color: gray;
   font-weight: 800;
 `
 
 function Header() {
+    
     return (
+        
         <header>
             <nav className="navbar navbar-expand navbar-light ">
                 <div className="container-fluid">
@@ -53,6 +57,8 @@ function Header() {
                 </div>
             </div>
         </header >
+        
+        
     );
 }
 

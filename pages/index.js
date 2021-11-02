@@ -1,5 +1,6 @@
 import ProductCard from "./components/ProductCard";
 
+
 export const getStaticProps = async() =>{ //this function runs at buildtime as our app is built and our components rendered
   
   const res = await fetch(
@@ -15,8 +16,10 @@ export const getStaticProps = async() =>{ //this function runs at buildtime as o
 }
 
 export default function Home(){
-  return (
 
+  
+  return (
+    
     <div className="fluid-container w-100">
       <div className="row">
         <div className="col-4"><ProductCard /></div>
@@ -24,5 +27,6 @@ export default function Home(){
         <div className="col-4"><ProductCard /></div>
       </div>
     </div>
+    
   )
 }
