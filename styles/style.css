@@ -57,16 +57,38 @@
 /*
 --------------------------------------------------------------------------
 */
-.cardContainer{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.description-text{
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  padding: 0px;
+  width: 15em;
+  display:inline-block
 }
+.productContainer{
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap
+}
+.top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+
+}
+
 .cardType{
   text-align: right;
 }
+.show-more{
+  width: 20%;
+  margin-left: 40%;
+  margin-right: 30%;
+}
 
 .cardMain{
+  height: 710px;
   margin-top: 4rem;
   margin: 3rem;
   padding: 1.5rem;
@@ -76,7 +98,7 @@
   border: 1px solid #000000;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  width: auto;
+  width: 280px;
 }
 .cardMain:hover,
 .cardMain:focus,
@@ -131,10 +153,12 @@
 }
 
 .digPic{
+  margin-left: auto;
+  margin-right: auto;
   border: 5px solid #d5e400;
   display: block;
   width: auto;
-  height: 200px;
+  height: 300px;
   object-fit: cover;
   
 }
