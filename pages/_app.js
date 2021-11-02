@@ -1,5 +1,5 @@
-import Header from './components/header';
-import Footer from './components/footer';
+import Header from '../components/header'
+import Footer from '../components/footer';
 import '../styles/style.css'
 import '../styles/footer.css';
 import '../styles/globals.css';

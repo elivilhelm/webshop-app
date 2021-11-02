@@ -1,4 +1,4 @@
-import ProductCard from "./components/ProductCard";
+import ProductCard from "../components/ProductCard";
 
 export const getStaticProps = async() =>{ //this function runs at buildtime as our app is built and our components rendered
   

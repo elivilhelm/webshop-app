@@ -1,6 +1,5 @@
 import Link from 'next/Link';
 import styled from 'styled-components';
-import { useRouter } from 'next/router';
 
 const GrayLink = styled.a`
   color: gray;
@@ -14,21 +13,20 @@ function Header() {
                 <div className="container-fluid">
                     <div >
                         <ul className="navbar-nav mb-2 mb-lg-0">
+                            
                             <li className="nav-item active">
-                                
                                 <Link href="/" passHref>
-                                   <a> <GrayLink>Home</GrayLink> </a>
+                                    <a><GrayLink>Home</GrayLink></a>
                                 </Link>
-                                
                             </li>
                             <li className="nav-item">
                                 <Link href="/features">
-                                   <a> <GrayLink>Features</GrayLink></a>
+                                    <a> <GrayLink>Features</GrayLink></a>
                                 </Link>
                             </li>
                             <li className="nav-item">
                                 <Link href="/about">
-                                   <a> <GrayLink>About</GrayLink></a>
+                                    <a> <GrayLink>About</GrayLink></a>
                                 </Link>
                             </li>
                             <li className="nav-item">

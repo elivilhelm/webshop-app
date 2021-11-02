@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
-import Youtube from './fontAwesomeIcons/Youtube';
-import Facebook from './fontAwesomeIcons/Facebook';
-import Instagram from './fontAwesomeIcons/Instagram';
+import Youtube from '../components/fontAwesomeIcons/Youtube';
+import Facebook from '../components/fontAwesomeIcons/Facebook';
+import Instagram from '../components/fontAwesomeIcons/Instagram';
 
 
 function Footer() {

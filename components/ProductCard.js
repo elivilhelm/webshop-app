@@ -1,5 +1,4 @@
-import React from "react";
-import DigimonImage from "./digimonImage";
+import DigimonImage from "../components/digimonImage";
 
 const ProductCard = (props) => (
   <div className="cardContainer">
