@@ -71,6 +71,12 @@
   align-items: center;
   flex-wrap: wrap
 }
+.top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+
+}
 
 .cardType{
   text-align: right;
@@ -82,7 +88,7 @@
 }
 
 .cardMain{
-  height: 610px;
+  height: 710px;
   margin-top: 4rem;
   margin: 3rem;
   padding: 1.5rem;
