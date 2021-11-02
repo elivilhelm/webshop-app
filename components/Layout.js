@@ -2,7 +2,7 @@ import Footer from "./footer"
 import Header from "./header"
 import dark from "../themes/dark"
 import light from "../themes/light"
-import { ThemeContext } from "./context/themeProvider";
+import { ThemeContext } from "../context/themeProvider";
 import { useContext } from "react";
 
 const Layout = ({ children }) =>{

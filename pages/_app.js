@@ -8,8 +8,8 @@ import '../styles/cart.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Head from 'next/head';
 
-import ThemeProvider from './components/context/themeProvider';
-import Layout from './components/Layout';
+import ThemeProvider from '../context/themeProvider';
+import Layout from '../components/Layout';
 
 import React from "react";
 
