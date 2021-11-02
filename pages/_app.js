@@ -1,3 +1,5 @@
+import Header from '../../webshop-app/components/header';
+import Footer from '../../webshop-app/components/footer';
 import '../styles/style.css'
 import '../styles/footer.css';
 import '../styles/globals.css';
@@ -13,10 +15,8 @@ import Layout from './components/Layout';
 
 
 
-export default function Home({ Component, pageProps }) {
-  
+export default function Home({Component, pageProps}) {
   return (
-
     <div>
       
       <Head>
@@ -33,6 +33,5 @@ export default function Home({ Component, pageProps }) {
 
 
     </div>
-
-  )
+  );
 }
