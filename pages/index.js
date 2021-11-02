@@ -47,6 +47,7 @@ function ReturnAPIdata({ digimonCards }) {
       >
         show more
       </button>
+
     </div>
   );
 }
@@ -58,4 +59,5 @@ export default function Home({ digimonCards }) {
       <ReturnAPIdata digimonCards={digimonCards} />
     </div>
   );
+
 }
