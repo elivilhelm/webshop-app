@@ -5,6 +5,7 @@ import { ThemeContext } from "styled-components";
 import { datamine } from "../pages/index";
 import { render } from "react-dom";
 import React, { useState } from "react";
+import {CartContext} from '../context/cartProvider'
 
 export const getStaticProps = async () => {
   //this function runs at buildtime as our app is built and our components rendered

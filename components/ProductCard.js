@@ -1,7 +1,22 @@
-import React from "react";
 import DigimonImage from "./digimonImage";
+import React, {useState} from 'react'
+import {CartContext} from "../context/cartProvider";
 
-const ProductCard = (props) => (
+
+
+
+
+const ProductCard = (props) =>{
+
+  const[cart, setCart] = useContext(CartContext);
+
+  const addToCart = ()=>{
+
+
+  }
+  
+return(
+
   <div className="cardContainer">
     <section className="cardMain">
       <div className="top">
@@ -24,7 +39,10 @@ const ProductCard = (props) => (
       <p>
         <small className="description-text">{props.description}</small>
       </p>
+      <button>buy</button>
     </section>
   </div>
-);
+) 
+}
+
 export default ProductCard;

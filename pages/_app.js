@@ -10,6 +10,7 @@ import Head from 'next/head';
 
 import ThemeProvider from '../context/themeProvider';
 import Layout from '../components/Layout';
+import CartProvider from '../context/cartProvider';
 
 import React from "react";
 
@@ -31,7 +32,7 @@ export default function Home({Component, pageProps}) {
       <Component {...pageProps} />
       </Layout>
       </ThemeProvider>
-
+      
 
 
     </div>
