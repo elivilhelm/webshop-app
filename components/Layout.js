@@ -1,8 +1,8 @@
-import Footer from "./footer"
-import Header from "./header"
+import Footer from "../components/footer"
+import Header from "../components/header"
 import dark from "./themes/dark"
-import light from "../pages/themes/light"
-import { ThemeContext } from "./context/themeProvider";
+import light from "./themes/light"
+import { ThemeContext } from "../context/themeProvider";
 import { useContext } from "react";
 
 const Layout = ({ children }) => {

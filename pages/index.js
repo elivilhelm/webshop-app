@@ -1,9 +1,4 @@
-import ProductCard from "../../webshop-app/components/ProductCard";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Component, useContext } from "react";
-import { ThemeContext } from "styled-components";
-import { datamine } from "../pages/index";
-import { render } from "react-dom";
+import ProductCard from "../components/ProductCard";
 import React, { useState } from "react";
 
 export const getStaticProps = async () => {
