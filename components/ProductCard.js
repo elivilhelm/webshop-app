@@ -14,7 +14,7 @@ const ProductCard = (props) => (
           </p>
         </a>
       </div>
-      <img src={props.image} className="digPic" style={ {border: "2px solid " + props.color} }/>
+      <img src={props.image} className="digPic" style={{ border: "2px solid " + props.color }} />
       <a href="#" className="cardName">
         <h1 className="cardName">{props.name}</h1>
       </a>

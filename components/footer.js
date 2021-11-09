@@ -4,10 +4,6 @@ import Youtube from './fontAwesomeIcons/Youtube';
 import Facebook from './fontAwesomeIcons/Facebook';
 import Instagram from './fontAwesomeIcons/Instagram';
 
-import ThemeProvider from './context/themeProvider';
-
-
-
 function Footer() {
     return (
         <footer className="page-footer font-small blue pt-4 FooterContainer">
@@ -28,7 +24,7 @@ function Footer() {
                                 <div className="col-4"><Youtube /></div>
                                 <div className="col-4"><Instagram /></div>
 
-                                
+
                             </div>
                         </div>
                     </div>

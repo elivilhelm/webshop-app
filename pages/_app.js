@@ -1,5 +1,3 @@
-import Header from '../../webshop-app/components/header';
-import Footer from '../../webshop-app/components/footer';
 import '../styles/style.css'
 import '../styles/footer.css';
 import '../styles/globals.css';
