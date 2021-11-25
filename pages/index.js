@@ -3,7 +3,6 @@ import React, { useState } from "react";
 
 export const getStaticProps = async () => {
   //this function runs at buildtime as our app is built and our components rendered
-
   const res = await fetch(
     "https://digimoncard.io/api-public/search.php?type=digimon&sort=name&sortdirection=desc&series=Digimon Card Game"
   );
@@ -24,6 +23,7 @@ function ReturnAPIdata({ digimonCards }) {
           (digimonCards, index) =>
             index < limit && (
               <ProductCard
+                key={digimonCards.cardnumber}
                 name={digimonCards.name}
                 image={digimonCards.image_url}
                 price={digimonCards.play_cost}
@@ -48,7 +48,7 @@ function ReturnAPIdata({ digimonCards }) {
 }
 
 export default function Home({ digimonCards }) {
-  console.log(digimonCards);
+  //console.log(digimonCards);
   return (
     <div>
       <ReturnAPIdata digimonCards={digimonCards} />
