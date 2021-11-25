@@ -11,7 +11,6 @@ const GrayLink = styled.a`
 function Header() {
 
     return (
-
         <header>
             <nav className="navbar navbar-expand navbar-light ">
                 <div className="container-fluid">
@@ -20,23 +19,23 @@ function Header() {
                             <li className="nav-item active">
 
                                 <Link href="/" passHref>
-                                    <a> <GrayLink>Home</GrayLink> </a>
+                                    Home
                                 </Link>
 
                             </li>
                             <li className="nav-item">
                                 <Link href="/features">
-                                    <a> <GrayLink>Features</GrayLink></a>
+                                    Features
                                 </Link>
                             </li>
                             <li className="nav-item">
                                 <Link href="/about">
-                                    <a> <GrayLink>About</GrayLink></a>
+                                    About
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link href="/cart" passHref>
-                                    <a><GrayLink>Cart</GrayLink></a>
+                                <Link href="/Cart" passHref>
+                                    Cart
                                 </Link>
                             </li>
 

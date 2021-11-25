@@ -8,10 +8,6 @@ const ThemeProvider = ({ children }) => {
         <ThemeContext.Provider value={{ dark, setDark }}>
             {children}
         </ThemeContext.Provider>
-
     )
-
 }
-
-
 export default ThemeProvider;
