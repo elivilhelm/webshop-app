@@ -4,12 +4,6 @@ import { keyframes } from "styled-components"
 export default function digimon({ digimonCards }) {
     console.log(digimonCards)
 
-    const a = { 
-        a: 1,
-        b: 2,
-        c: 3
-      }
-
     return (
         <div className="cardMainCARD">
             {
