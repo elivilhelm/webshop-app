@@ -6,9 +6,7 @@ export const getStaticProps = async () => {
   const res = await fetch(
     "https://digimoncard.io/api-public/search.php?type=digimon&sort=name&sortdirection=desc&series=Digimon Card Game"
   );
-
   const data = await res.json();
-
   return {
     props: { digimonCards: data }, //Kommer att skickas till pagecomponent i form av props
   };
